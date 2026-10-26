@@ -17,8 +17,8 @@ export const Projects: React.FC = () => {
         {/* Section Header with Navigation Controls */}
         <div className="projects__header">
           <h2 className="section__title">
-            I make Incredible <br />
-            <span>Projects</span>
+            Sample works<br />
+            <span>Activities</span>
           </h2>
 
           <div className="projects__controls" aria-label="Project carousel navigation">
