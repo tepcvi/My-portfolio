@@ -23,11 +23,6 @@ export const portfolioData: PortfolioData = {
   },
   socialLinks: [
     {
-      name: 'LinkedIn',
-      url: 'https://linkedin.com/in/stephendave-piquero',
-      icon: 'ri-linkedin-fill'
-    },
-    {
       name: 'GitHub',
       url: 'https://github.com/stephendave-piquero',
       icon: 'ri-github-line'
@@ -41,11 +36,6 @@ export const portfolioData: PortfolioData = {
       name: 'Instagram',
       url: 'https://instagram.com/stephendave.piquero',
       icon: 'ri-instagram-line'
-    },
-    {
-      name: 'Dribbble',
-      url: 'https://dribbble.com/stephendave',
-      icon: 'ri-dribbble-line'
     }
   ],
   directMessaging: [
