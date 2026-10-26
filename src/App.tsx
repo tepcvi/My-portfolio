@@ -32,7 +32,7 @@ export const App: React.FC = () => {
       );
       sr.reveal('.home__data', { delay: 900, origin: 'bottom' });
       sr.reveal('.home__info', { delay: 1200, origin: 'bottom' });
-      sr.reveal('.home__social, .home__cv', { delay: 1200, origin: 'bottom' });
+      sr.reveal('.home__social', { delay: 1200, origin: 'bottom' });
       // About section: text from left, picture from right
       sr.reveal('.about__data', { origin: 'left', delay: 300 });
       sr.reveal('.about__image', { origin: 'right', delay: 300 });

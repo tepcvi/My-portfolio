@@ -104,19 +104,6 @@ export const Hero: React.FC = () => {
             </a>
           ))}
         </div>
-
-        {/* Bottom Right: Resume Download CTA */}
-        <a
-          href={personal.resumeUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="home__cv"
-          id="hero-resume-btn"
-          aria-label="Download Resume"
-        >
-          <span>Resume</span>
-          <i className="ri-file-list-2-line" />
-        </a>
       </div>
     </section>
   );
