@@ -15,7 +15,7 @@ export const portfolioData: PortfolioData = {
     aboutHeadlineSecond: 'Is My Passion',
     aboutDescription:
       "I'm a Full-Stack Developer passionate about pushing the boundaries of interactive web engineering, creative code, and digital design. Driven by curiosity and craftsmanship, I build responsive, accessible, and memorable digital experiences for modern brands and products.",
-    email: 'stephendave.piquero@example.com',
+    email: 'stephen.piquero@gmail.com',
     location: 'Philippines / Remote',
     resumeUrl: '/assets/pdf/resume-sample.pdf',
     heroImage: '/assets/img/user-studio-cutout.png',
