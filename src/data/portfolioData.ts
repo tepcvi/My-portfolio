@@ -18,8 +18,8 @@ export const portfolioData: PortfolioData = {
     email: 'stephendave.piquero@example.com',
     location: 'Philippines / Remote',
     resumeUrl: '/assets/pdf/resume-sample.pdf',
-    heroImage: '/assets/img/user-selfie-cutout.png',
-    aboutImage: '/assets/img/user-selfie-cutout.png'
+    heroImage: '/assets/img/user-studio-cutout.png',
+    aboutImage: '/assets/img/user-studio-cutout.png'
   },
   socialLinks: [
     {
