@@ -24,7 +24,7 @@ export const portfolioData: PortfolioData = {
   socialLinks: [
     {
       name: 'GitHub',
-      url: 'https://github.com/stephendave-piquero',
+      url: 'https://github.com/tepcvi',
       icon: 'ri-github-line'
     },
     {
@@ -34,7 +34,7 @@ export const portfolioData: PortfolioData = {
     },
     {
       name: 'Instagram',
-      url: 'https://instagram.com/stephendave.piquero',
+      url: 'https://www.instagram.com/tephhwn/',
       icon: 'ri-instagram-line'
     }
   ],
@@ -46,12 +46,12 @@ export const portfolioData: PortfolioData = {
     },
     {
       name: 'Telegram',
-      url: 'https://t.me/stephendave_piquero',
+      url: 'https://t.me/Teeeepo',
       icon: 'ri-telegram-line'
     },
     {
       name: 'Discord',
-      url: 'https://discord.com/users/stephendave',
+      url: 'https://discord.com/users/_Tep',
       icon: 'ri-discord-line'
     },
     {
