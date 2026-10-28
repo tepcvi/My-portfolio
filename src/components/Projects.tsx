@@ -48,6 +48,8 @@ export const Projects: React.FC = () => {
             spaceBetween={24}
             slidesPerView="auto"
             grabCursor={true}
+            preventClicks={false}
+            preventClicksPropagation={false}
             loop={true}
             speed={600}
             keyboard={{ enabled: true }}
@@ -68,82 +70,107 @@ export const Projects: React.FC = () => {
             }}
             className="projects__swiper"
           >
-            {projects.map((proj) => (
-              <SwiperSlide key={proj.id} className="projects__slide">
-                <article className="projects__card">
-                  <div className="blob" />
+            {projects.map((proj) => {
+              const driveUrl = proj.driveUrl || proj.githubUrl;
+              const stepsUrl = proj.stepsUrl || driveUrl || proj.liveUrl;
 
-                  {/* Top Badge: Number and Category */}
-                  <div className="projects__number">
-                    <h1>{proj.number}</h1>
-                    <span className="projects__category-badge">{proj.category}</span>
-                  </div>
+              return (
+                <SwiperSlide key={proj.id} className="projects__slide">
+                  <article className="projects__card">
+                    <div className="blob" />
 
-                  {/* Project Info */}
-                  <div className="projects__data">
-                    <h3 className="projects__title">{proj.title}</h3>
-                    <p className="projects__subtitle">{proj.subtitle}</p>
-                    <p className="projects__description">{proj.description}</p>
-
-                    <div className="projects__tech-tags">
-                      {proj.techStack.map((tech) => (
-                        <span key={tech} className="projects__tag">
-                          {tech}
-                        </span>
-                      ))}
+                    {/* Top Badge: Number and Category */}
+                    <div className="projects__number">
+                      <h1>{proj.number}</h1>
+                      <span className="projects__category-badge">{proj.category}</span>
                     </div>
-                  </div>
 
-                  {/* Project Preview Image */}
-                  <div className="projects__image">
-                    <img
-                      src={proj.image}
-                      alt={`${proj.title} preview`}
-                      className="projects__img"
-                      loading="lazy"
-                      width={400}
-                      height={240}
-                    />
+                    {/* Project Info */}
+                    <div className="projects__data">
+                      <h3 className="projects__title">{proj.title}</h3>
+                      <p className="projects__subtitle">{proj.subtitle}</p>
+                      <p className="projects__description">{proj.description}</p>
 
-                    <a
-                      href={proj.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="projects__button"
-                      aria-label={`Open live demo for ${proj.title}`}
-                      title="Launch Project"
-                    >
-                      <i className="ri-arrow-right-up-long-line" />
-                    </a>
-                  </div>
+                      <div className="projects__tech-tags">
+                        {proj.techStack.map((tech) => (
+                          <span key={tech} className="projects__tag">
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
 
-                  {/* Action Link Footer */}
-                  <div className="projects__footer">
-                    <a
-                      href={proj.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="projects__live-link"
-                    >
-                      <span>Live Preview</span>
-                      <i className="ri-arrow-right-up-line" />
-                    </a>
-                    {proj.githubUrl && (
+                    {/* Project Preview Image */}
+                    <div className="projects__image">
+                      <img
+                        src={proj.image}
+                        alt={`${proj.title} preview`}
+                        className="projects__img"
+                        loading="lazy"
+                        width={400}
+                        height={240}
+                      />
+
                       <a
-                        href={proj.githubUrl}
+                        href={driveUrl || proj.liveUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="projects__github-link"
-                        title="Source Code"
-                        aria-label="View source code on GitHub"
+                        className="projects__button"
+                        aria-label={`Open ${proj.title} on Google Drive`}
+                        title="Open on Google Drive"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          const target = driveUrl || proj.liveUrl;
+                          if (target && target !== '#') {
+                            window.open(target, '_blank', 'noopener,noreferrer');
+                          }
+                        }}
                       >
-                        <i className="ri-github-line" />
+                        <i className="ri-arrow-right-up-long-line" />
                       </a>
-                    )}
-                  </div>
-                </article>
-              </SwiperSlide>
-            ))}
+                    </div>
+
+                    {/* Action Link Footer */}
+                    <div className="projects__footer">
+                      <a
+                        href={stepsUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="projects__live-link"
+                        title="View Steps"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          if (stepsUrl && stepsUrl !== '#') {
+                            window.open(stepsUrl, '_blank', 'noopener,noreferrer');
+                          }
+                        }}
+                      >
+                        <span>Steps</span>
+                        <i className="ri-arrow-right-up-line" />
+                      </a>
+                      {driveUrl && (
+                        <a
+                          href={driveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="projects__drive-link"
+                          title="Google Drive"
+                          aria-label="View on Google Drive"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            if (driveUrl && driveUrl !== '#') {
+                              window.open(driveUrl, '_blank', 'noopener,noreferrer');
+                            }
+                          }}
+                        >
+                          <i className="ri-drive-line" />
+                        </a>
+                      )}
+                    </div>
+                  </article>
+                </SwiperSlide>
+              );
+            })}
           </Swiper>
 
           {/* Pagination Bullets */}

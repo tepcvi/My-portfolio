@@ -15,6 +15,8 @@ export interface ProjectItem {
   image: string;
   liveUrl: string;
   githubUrl?: string;
+  driveUrl?: string;
+  stepsUrl?: string;
 }
 
 export interface WorkItem {
