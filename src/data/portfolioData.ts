@@ -237,6 +237,104 @@ export const portfolioData: PortfolioData = {
       ]
     }
   ],
+    techStack: [
+    {
+      id: 'tech-1',
+      name: 'React 19',
+      category: 'Frontend Library',
+      level: 'Advanced',
+      icon: 'ri-reactjs-line',
+      description: 'Component architecture, custom hooks, virtual DOM & interactive single-page applications.'
+    },
+    {
+      id: 'tech-2',
+      name: 'TypeScript',
+      category: 'Programming Language',
+      level: 'Proficient',
+      icon: 'ri-code-s-slash-line',
+      description: 'Static type checking, interfaces, generics & robust error-free codebases.'
+    },
+    {
+      id: 'tech-3',
+      name: 'Next.js 15',
+      category: 'React Framework',
+      level: 'Intermediate',
+      icon: 'ri-nextjs-line',
+      description: 'Server-side rendering, App Router, static generation & full-stack React apps.'
+    },
+    {
+      id: 'tech-4',
+      name: 'JavaScript (ESNext)',
+      category: 'Core Language',
+      level: 'Advanced',
+      icon: 'ri-javascript-line',
+      description: 'Modern asynchronous programming, ES6+ modules, closures & DOM manipulation.'
+    },
+    {
+      id: 'tech-5',
+      name: 'Tailwind CSS',
+      category: 'CSS Framework',
+      level: 'Advanced',
+      icon: 'ri-tailwind-css-fill',
+      description: 'Utility-first styling, design system tokens, responsive grids & fluid UI layouts.'
+    },
+    {
+      id: 'tech-6',
+      name: 'Node.js',
+      category: 'Backend Runtime',
+      level: 'Intermediate',
+      icon: 'ri-nodejs-line',
+      description: 'Server-side JavaScript runtime for event-driven scalable network applications.'
+    },
+    {
+      id: 'tech-7',
+      name: 'HTML5 & CSS3',
+      category: 'Web Standards',
+      level: 'Advanced',
+      icon: 'ri-html5-line',
+      description: 'Semantic markup, accessibility (WCAG), CSS animations, flexbox & grid systems.'
+    },
+    {
+      id: 'tech-8',
+      name: 'Git & GitHub',
+      category: 'Version Control',
+      level: 'Proficient',
+      icon: 'ri-github-line',
+      description: 'Branch management, pull requests, version tracking & CI/CD deployment pipelines.'
+    },
+    {
+      id: 'tech-9',
+      name: 'Vite',
+      category: 'Build & Dev Tool',
+      level: 'Advanced',
+      icon: 'ri-flashlight-line',
+      description: 'Lightning-fast Hot Module Replacement, optimized bundling & modern web tooling.'
+    },
+    {
+      id: 'tech-10',
+      name: 'Figma',
+      category: 'UI/UX Design',
+      level: 'Proficient',
+      icon: 'ri-figma-line',
+      description: 'High-fidelity wireframing, component libraries & interactive design prototyping.'
+    },
+    {
+      id: 'tech-11',
+      name: 'Express.js',
+      category: 'Backend Framework',
+      level: 'Intermediate',
+      icon: 'ri-server-line',
+      description: 'Building secure RESTful APIs, routing middleware & database integration.'
+    },
+    {
+      id: 'tech-12',
+      name: 'MySQL & Databases',
+      category: 'Database Management',
+      level: 'Intermediate',
+      icon: 'ri-database-2-line',
+      description: 'Relational data modeling, SQL queries, database indexing & persistent storage.'
+    }
+  ],
   testimonials: [
     {
       id: 'test-1',

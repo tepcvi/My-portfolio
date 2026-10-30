@@ -35,6 +35,15 @@ export interface EducationItem {
   description: string;
 }
 
+export interface TechStackItem {
+  id: string;
+  name: string;
+  category: string;
+  level: string;
+  icon: string;
+  description: string;
+}
+
 export interface SkillCategory {
   id: string;
   title: string;
@@ -76,5 +85,6 @@ export interface PortfolioData {
   experience: WorkItem[];
   education: EducationItem[];
   skillCategories: SkillCategory[];
-  testimonials: TestimonialItem[];
+  techStack?: TechStackItem[];
+testimonials: TestimonialItem[];
 }

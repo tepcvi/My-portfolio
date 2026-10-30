@@ -1844,6 +1844,56 @@ img {
   color: var(--title-color);
 }
 
+
+/*=============== TECH STACK MARQUEE ===============*/
+.tech-stack__icon-box {
+  width: 68px;
+  height: 68px;
+  margin: 0 auto 0.75rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsla(var(--hue), 60%, 50%, 0.12);
+  border: 1px solid hsla(var(--hue), 60%, 65%, 0.3);
+  box-shadow: 0 0 20px hsla(var(--hue), 60%, 50%, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tech-stack__card:hover .tech-stack__icon-box {
+  transform: scale(1.1) rotate(4deg);
+  box-shadow: 0 0 25px hsla(var(--hue), 70%, 60%, 0.4);
+}
+
+.tech-stack__icon-box i {
+  font-size: 2.2rem;
+  color: var(--first-color);
+}
+
+.tech-stack__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  background: hsla(var(--hue), 60%, 50%, 0.1);
+  border: 1px solid hsla(var(--hue), 60%, 50%, 0.25);
+  font-size: var(--smaller-font-size);
+  color: var(--first-color);
+  font-family: var(--second-font);
+  font-weight: var(--font-medium);
+  margin-bottom: 0.85rem;
+}
+
+.tech-stack__badge i {
+  font-size: 0.85rem;
+  color: var(--first-color);
+}
+
+.tech-stack__desc {
+  font-style: normal !important;
+}
+
 .testimonials__quote {
   font-size: var(--small-font-size);
   color: var(--text-color);
