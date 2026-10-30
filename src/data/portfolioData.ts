@@ -18,8 +18,8 @@ export const portfolioData: PortfolioData = {
     email: 'stephen.piquero@gmail.com',
     location: 'Philippines / Remote',
     resumeUrl: '/assets/pdf/resume-sample.pdf',
-    heroImage: '/assets/img/user-studio-cutout.png',
-    aboutImage: '/assets/img/user-studio-cutout.png'
+    heroImage: '/assets/img/mah-pic.png',
+    aboutImage: '/assets/img/mah-pic.png'
   },
   socialLinks: [
     {
@@ -177,16 +177,16 @@ export const portfolioData: PortfolioData = {
     },
     {
       id: 'edu-2',
-      degree: 'Advanced Certificate in UI/UX & Web Performance',
-      institution: 'Interaction Design Foundation',
-      period: '2022 - 2023',
+      degree: 'Science Technology Engineering Mathematics',
+      institution: 'Polomolok National Highschool',
+      period: '2023 - 2024',
       description:
         'Comprehensive training in visual hierarchy, design tokens, micro-interactions, responsive grids, and web accessibility (WCAG 2.2 AA).'
     },
     {
       id: 'edu-3',
-      degree: 'Pre-Engineering & Applied Mathematics Diploma',
-      institution: 'Science & Technology Academy',
+      degree: 'Elementary',
+      institution: 'Perfecto B. Salada Elementary School',
       period: '2018 - 2020',
       description:
         'Rigorous foundation in analytical thinking, calculus, physics, and computational problem-solving.'
