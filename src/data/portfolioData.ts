@@ -185,7 +185,7 @@ export const portfolioData: PortfolioData = {
     },
     {
       id: 'edu-3',
-      degree: 'Elementary',
+      degree: 'SPED ',
       institution: 'Perfecto B. Salada Elementary School',
       period: '2018 - 2020',
       description:
